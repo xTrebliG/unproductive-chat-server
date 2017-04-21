@@ -1,9 +1,11 @@
 const express = require('express');
 const http = require('http');
 const bodyParser = require('body-parser');
-const api = require('./routes/api.js');
+const api = require('./app/routes.js');
 const port = process.env.PORT || '3000';
 const app = express();
+
+require("./config/connection.js")(app);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

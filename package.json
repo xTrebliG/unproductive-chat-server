@@ -9,8 +9,13 @@
   "author": "xTrebliG",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.16.1",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
+    "mongoose": "^4.9.5",
     "pusher": "^1.5.1"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.0.0"
   }
 }
